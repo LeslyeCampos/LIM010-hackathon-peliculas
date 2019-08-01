@@ -1,7 +1,46 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+body{
+    width: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif, Open Sans;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: inline-flex;
+    height: 120px;
+    max-width: 360px;
+    margin: auto;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url(./Imagenes/cancha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 241px;
+    height: 120px;
+    background-position: center;
+}
+
+.titulo{
+    background-image: url(./Imagenes/titulo.png);
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 120px;
+    background-size: contain;
+    background-position: center;
 }
 .content-all{
     width: 210px;
@@ -51,63 +90,44 @@
     transform: scale(2.2);
     transition: all 300ms;
 }
-@keyframes rotar {
+@keyframes rotar{
     from{
         transform: rotateY(0deg);
     }to{
         transform: rotateY(360deg);
     }
 }
-* {
-    outline: none;
-    background-color: black;
-    color: white;
-}
 
-.logo {
-    height: 19vh;
-    width: 50vw;
-    background-image: url(img/skulllogo.png);
-    margin: auto;
-    border-radius: 38px;
-}
-
-.search {
-    display: flex;
-    justify-content: center;
-}
-
-body {
-  background-color: black;
-   background-repeat: no-repeat;
-   font-family: 'Montserrat', sans-serif, Open Sans;
-   background-size: cover;
-   background-attachment: fixed;
-   overflow: hidden;
- }
-
- .header {
-   display: inline-flex;
-  height: 120px;
-  max-width: 360px;
-  margin: auto;
-  justify-content: center;
-}
-
-.logo {
-  background-image: url(./Imagenes/cancha.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 241px;
-  height: 120px;
-  background-position: center;
-}
-
-.titulo {
-  background-image: url(./Imagenes/titulo.png);
-  background-repeat: no-repeat;
-  width: 550px;
-  height: 120px;
-  background-size: contain;
-  background-position: center;
+@media(max-width: 720px){
+    body{
+        width: 100%;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header{
+        display: inline-flex;
+        height: 120px;
+        max-width: 360px;
+        margin: auto;
+        justify-content: center;
+    }
+    .square-search{
+        width: 200px;
+        height: 29px;
+        border-radius: 30px;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 3px;    
+    }
+    .logo{
+        background-image: url(./Imagenes/cancha.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 241px;
+        height: 120px;
+        background-position: center;
+    }
 }

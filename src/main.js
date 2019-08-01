@@ -7,8 +7,10 @@ const showDisplay = (arrayToPrint) => {
     arrayToPrint.forEach(element => {
         display.innerHTML += `
           <figure class="wp-caption">
-          <input class="poster" name="${element.title}" type="image" src="${element.poster}" alt="${element.title}">
-          <figcaption class="wp-caption-text" type="button">${element.poster}</figcaption>
+          <img class="poster" name="${element.title}" type="image" src="${element.poster}" alt="${element.title}"/>
+          <p>${element.title}</p>
+          <p>${element.year}</p>
+          <p>${element.genre}</p>              
           </figure>`;
     })
 };
@@ -27,6 +29,7 @@ const searchTitles = () => {
                     title: element.Title,
                     type: element.Type,
                     year: element.Year,
+                    genre: element.Genre,
                 }]
                 showDisplay(movie);
             });
