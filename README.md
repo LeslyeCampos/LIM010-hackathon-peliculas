@@ -1,100 +1,72 @@
-# "Hackathon" de final de _Common Core_
+# ![image](https://user-images.githubusercontent.com/51204770/62344520-f390a780-b4b3-11e9-98b8-faca5463d2d7.png)
 
 ## Índice
 
-* [Preámbulo](#preámbulo)
-* [Resumen del proyecto](#resumen-del-proyecto)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Consideraciones técnicas](#consideraciones-técnicas)
+- [Índice](#índice)
+- [Preámbulo](#preámbulo)
+- [Historias de Usuario](#historias-de-usuario)
+- [UX](#ux)
 
- ***
+
 
 ## Preámbulo
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Hulu, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por pop-corn / pipoca / palomitas /
-canchita / cabritas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+Historias con Cancha es una web  que nos ayudará en la búsqueda  de información detallada  de  nuestras series y películas favoritas para descubrir contenidos acordes a nuestras preferencias.
+Los resultados irán apareciendo según se escriba en el buscador alguna palabra clave,  de manera que cuanto más completo se escriba el nombre que se quiere localizar más específicos serán los resultados.
+Al  click sobre el título accederemos a una ficha detallada de la serie o película, con datos como: director, actor, país, género, año, idioma y un breve resumen.
 
- ![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
 
-## Resumen del proyecto
+ Equipo de trabajo:
+<br> Alumnas del Bootcamp de Laboratoria
+- Leslye Campos
+- Nora Zúñiga
+- Sabrina Campos
+- Adriana Bautista
 
-Durante estos días crearán el producto que ustedes deseen alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en Netflix,
-uno de pelis de terror... o... ¡lo que quieran!
+## Status del proyecto:
 
-## Consideraciones generales
+ ## Sprint 31/07 al 02/08
+ <br>Para esta etapa se ha seleccionado la primera historia de nuestro producto para presentar al usuario acompañadas de los criterios de aceptación para satisfacer las necesidades de usuario.
 
-* Este proyecto se debe resolver en equipos de hasta 4 personas.
-* Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-* Tiempo para completar el reto: 3 días.
+ ### Historias de Usuario (1er sprint)
 
-## Objetivos de aprendizaje
+- H1. Como usuaria quiero visualizar   información de películas  y series recomendadas
+- H2. Como usuaria quiero poder buscar películas por palabras claves.
+- H3. Como usuaria quiero poder acceder a información detallada de las películas.
 
-* Enfrentarse a un reto de corta duración en el que pongan en práctica todo
-lo aprendido hasta ahora.
-* Que sigan desarrollando sus habilidades de trabajo en equipo. Mientras más
-personas en un equipo de trabajo, mayor complejidad para: tener un entendimiento
-común, seguir el flujo de trabajo, buscar consensos, etc.
 
-## Parte Obligatoria
+### Criterios de Aceptación:
 
-* Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-por _squad_ en el que se presente el _planning_ (_project_ de Github).
-* El `README` debe contener un resumen de qué trata el proyecto, el _research_ 
-y los _sketches_.
-* El proyecto deberá presentarse publicado en github pages (no se aceptará 
-demos en local)
+- El usuario puede visualizar las imágenes de las series y películas más recordadas. 
+- Al ingresar alguna palabra en el buscador devolverá todas la películas/series relacionadas con las palabras claves.
+- Al hacer click sobre la imagen  se mostrará información detallada de la película/serie
 
-## Consideraciones técnicas
+## UX (Diseño de experiencia de usuario)
 
-* El diseño visual de los componentes es de libre elección de ustedes,
-sin embargo, si no quieren crearlo desde cero, pueden utilizar el que
-propuso [Walmart](https://drive.google.com/file/d/0B6GBtl-gO6LwaVprQkFqTGI2a28/view).
-* Tienen libertad de utilizar las tecnologías que deseen (framework de CSS, 
-plugins, etc).
+Nuestra página está pensada en los usuarios amantes del séptimo arte. Historias con cancha  ayudará a mejorar las experiencias de los visitantes en la búsqueda de   información de las series y películas.
 
-## Horario
+#### Etapa investigación UX
+Para lograr los objetivos realizamos el siguiente proceso de diseño de experiencia de usuario:
 
-|       | Miércoles               | Jueves                       | Viernes                 | 
-|------ | ------------------------| ---------------------------- | ----------------------- | 
-| 8:00  | Kick off hackaton       | Daily por squad              | Hacking                 |      
-| 9:00  | Sesión de planificación | Hacking                      | Hacking                 | 
-| 10:00 | Hacking                 | Compartir link de aplicación | Detalles finales        |
-| 11:00 |                         | Presentación y Feedback      | Feria de demostraciones |    
-| 12:00 |                         |                              | Deliberación            |                  
 
-## Tips para la organización de trabajo entre UX y Front end 
+![Etapa investigación UX](https://user-images.githubusercontent.com/51204770/62350255-d82f9780-b4c7-11e9-8ba9-7028748eb0e2.png)
 
-* Las UX y FE entienden en conjunto el reto en el que van a trabajar, se 
-organizan y arman sus primeros bocetos.
-* Con los primeros bocetos/ideas, las FE pasan a crear su ambiente de desarrollo
-y a crear componentes atómicos que luego les sea fácil personalizar con CSS y 
-utilizar para crear interfaces más complejas. Además, las FE empiezan también a 
-trabajar en la lógica de la aplicación. Mientras tanto, las UX crean una guía de 
-estilos, los flujos de usuarios, hacen un prototipo más completo y lo testean.
-* Las UX comparten el prototipo testeado, para que el equipo empiece a personalizar 
-los componentes y a ponerlos en conjunto.
-* Las UX hacen QA y testing con los releases que vayan haciendo las FE.
-* Deberán tener en el planning, historias de usuario, criterios de aceptación y 
-definición de terminado.
-* Usen las ceremonias ágiles para saber en que van como equipo, dailys y 
-retrospectivas diarias son esenciales.
-* Iteren, iteren, iteren.
+## MockUP
+Para llegar al diseño final de cada historia de usuario realizamos 2 momentos: un prototipado de baja  fidelidad y de alta fidelidad
 
-## ¿Qué es la Feria de demos?
+#### Prototipado de Baja Fidelidad
+En esta etapa se usó el  lápiz y papel para maquetar interfaces en pantallas y obtener  una  gran cantidad de información de la interacción entre la interfaz y el usuario mediante un mayor número de ciclos de test, más sujetos o más prototipos.
 
-La feria de demos se realizará el día viernes, consiste en la dinámica de “speed dating”, 
-cada squad presentará su demo durante 3 minutos a un grupo de personas. Luego de los 3 
-minutos sonará una alarma y el grupo de personas rotará al siguiente squad, de esta forma 
-deberán presentar durante una hora. 
+![Vista 1](https://user-images.githubusercontent.com/51204770/62373042-90783280-b4fe-11e9-9250-0928b0070322.png)
 
-* Las demos no deben durar más de 3 minutos y deben mostrar el producto y las tecnologías 
-usadas.
+![Vista 2](https://user-images.githubusercontent.com/51204770/62373247-ffee2200-b4fe-11e9-9ba3-181b7c6f08f2.png)
 
+ Testeo de Usuarios:
+ Recibiendo el feedback de las compañeras del bootcamp se notó que el espacio de información que habíamos incorporado era innecesaria.
+
+#### Prototipado de Alta Fidelidad
+En esta etapa se usó FIGMA para demostrar cómo se van a representar visualmente los elementos definidos y puedan pasar también una prueba de testeo por usuarios.
+
+Testeo de Usuarios:
+Al compartir el diseño con los usuario nos hicieron notar algunos detalles que no habíamos incluido, los cuales nos parecieron importante implementar.
+- Agregar el footer
