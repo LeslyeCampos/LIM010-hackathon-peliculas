@@ -3,9 +3,7 @@
     background-color: black;
     color: white;
 }
-.hide{
-    display: none;
-}
+
 body{
     background-color: black;
     background-repeat: no-repeat;
@@ -118,6 +116,7 @@ body{
 
 .square-search{
     background: #9d0013;
+    border: none;
     /* border-color: #ffffff; */
     border-radius: 30px;
     font-weight: 600;
@@ -126,7 +125,15 @@ body{
     width: 200px;
     padding: 3px;
 }
-
+.characteristics{
+    background: none;
+    width: 387px;
+    height: 451px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+}
 label{
   font-size: 16px;
   font-family: 'Montserrat', sans-serif, Open Sans;
@@ -206,7 +213,29 @@ footer {
 .card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 29px;
+    margin: 10px;
+    background-size: 200px;
+}
+.cardstyles{
+    background-repeat: no-repeat;
+    border-radius: 21px;
+    display: flex;
+    margin: auto;
+    padding: inherit;
+    background: linear-gradient(to right, #F86400, #F89E00);
+    background-size: cover;
+    align-items: center;
+}
+aside .moviecard{
+    background: none;
+}
+.cardTitle{
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
 }
 .rounded-social-buttons .social-button {
     display: inline-block;
@@ -338,4 +367,7 @@ svg:not(:root).svg-inline--fa {
         perspective: 1000px;
         position: relative;
     }    
+}
+.hide{
+    display: none;
 }
