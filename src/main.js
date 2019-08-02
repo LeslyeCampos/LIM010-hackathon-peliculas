@@ -9,7 +9,7 @@ let url = '';
 const searchTitles = () => {
     const titleName = document.getElementById('byTitle').value;
     const typeOf = type.options[type.selectedIndex].value;
-    url = `http://www.omdbapi.com/?type=${typeOf}&s=${titleName}&r=json&apikey=3ab3fdc7`
+    url = `https://www.omdbapi.com/?type=${typeOf}&s=${titleName}&r=json&apikey=3ab3fdc7`
     fetch(url)
         .then(res => res.json())
         .then(json => {
