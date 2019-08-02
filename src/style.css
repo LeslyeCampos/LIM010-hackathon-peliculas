@@ -118,7 +118,7 @@
 
 body {
     background-color: black;
-    height: 100vh;
+    height: calc(100vh - 3em);
 }
 
 .posters {
@@ -207,6 +207,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 57vh;
+}
+
+.cardImg {
+    height: inherit;
 }
 
 .hide {
