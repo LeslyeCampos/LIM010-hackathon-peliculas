@@ -89,24 +89,37 @@ const showCard = (idMovie) => {
                     <h2 class='cardTitle'>${movie.title}</h2>
                     <aside class="moviecard">
                       <div>
-                      <p> resumen: ${movie.plot}</p>
+                      <p>Resumen: ${movie.plot}</p>
                       </div>
                       <div>
-                      <p> año: ${movie.year}</p>
+                      <p>Año: ${movie.year}</p>
                       </div>
                       <div>
-                      <p>tipo: ${movie.type}</p>
+                      <p>Tipo: ${movie.type}</p>
                       </div>
                       <div>
-                      <p>estreno: ${movie.released}</p>
+                      <p>Estreno: ${movie.released}</p>
                       </div>
                       <div>
-                      <p>idioma: ${movie.language}</p>
+                      <p>Idioma: ${movie.language}</p>
                       </div>
                       <div>
-                      <p>genero: ${movie.genre}</p>
+                      <p>Género: ${movie.genre}</p>
+                      </div>
+                      <div>
+                      <p>Actores: ${movie.actors}</p>
+                      </div>
+                      <div>
+                      <p>Director: ${movie.director}</p>
+                      </div>
+                      <div>
+                      <p>País: ${movie.country}</p>
+                      </div>
+                      <div class="star">
+                      <p class="star">${movie.rating}</p>
                       </div>
                     </aside>
+                    </div>
                     </div>
                     `;
                 })
@@ -115,4 +128,3 @@ const showCard = (idMovie) => {
 };
 
 display.addEventListener('click', getId);
-

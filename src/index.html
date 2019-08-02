@@ -2,80 +2,61 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./img/favicon-popcorn.jfif" type="image/x-icon">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <title>Historias con Cancha!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon-popcorn.jfif" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <title>Historias con Cancha!</title>
 </head>
 
 <body>
-  <header class="header">
-    <div id="titulo" class="titulo"></div>
-    <div id="logo" class="logo"></div>
-  </header>
-  <main>
-    <div class="search-flex">
-      <aside class="search">
-        <select name="selector" id="selector" class="square-search">
+    <header class="header">
+        <div id="titulo" class="titulo"></div>
+        <div id="logo" class="logo"></div>
+    </header>
+    <main>
+        <div class="search-flex">
+            <aside class="search">
+                <select name="selector" id="selector" class="square-search">
           <option value="" selected>Qué buscas?</option>
           <option value="movie">Películas</option>
           <option value="series">Series</option>
         </select>
-        <!-- <select name="" id="select1">
-          <option value="Accion">Accion</option>
-          <option value="Guerra">Guerra</option>
-          <option value="Humor">Terror</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select> -->
-        <div class="box-search">
-          <input id="byTitle" class="input-search" type="text" placeholder="Busca tu Pelicula...">
-          <button id="searchbyTitle" class="button-search"><i class="fa fa-search"></i></button>
+                <div class="box-search">
+                    <input id="byTitle" class="input-search" type="text" placeholder="Busca tu Pelicula...">
+                    <button id="searchbyTitle" class="button-search"><i class="fa fa-search"></i></button>
+                </div>
+            </aside>
         </div>
-      </aside>
-    </div>
-    <div class="content-all" id="slideshow">
-      <div class="content-carrousel">
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMTU4MTQ2MzA1Ml5BMl5BanBnXkFtZTcwODE3NTgwNA@@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMTY3OTg2OTM3OV5BMl5BanBnXkFtZTYwNzY5OTA3._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMTY2NzY5NDkyNl5BMl5BanBnXkFtZTcwNTc1NTYzMQ@@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BNzE4NDg5OWMtMzg3NC00ZDRjLTllMDMtZTRjNWZmNjBmMGZlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg"
-            alt=""></figure>
-        <figure><img src="https://m.media-amazon.com/images/M/MV5BN2I5YzFlYWEtZjRhNy00ZmQzLWJhNTktZGIwYjFjODdmNDgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-            alt=""></figure>
-      </div>
-    </div>
-    <section class="posters hide" id="posters"></section>
-    <section class="card hide" id="card"></section>
-  </main>
-  <footer>
-    <p>Hackathon Copyright © Sabrina, Leslye, Nora & Adriana 2019 </p>
-    <div class="rounded-social-buttons">
-      <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-  </footer>
-  <script src="main.js"></script>
-  <script src="data.js"></script>
+        <div class="content-all" id="slideshow">
+            <div class="content-carrousel">
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMTU4MTQ2MzA1Ml5BMl5BanBnXkFtZTcwODE3NTgwNA@@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMTY3OTg2OTM3OV5BMl5BanBnXkFtZTYwNzY5OTA3._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMTY2NzY5NDkyNl5BMl5BanBnXkFtZTcwNTc1NTYzMQ@@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BNzE4NDg5OWMtMzg3NC00ZDRjLTllMDMtZTRjNWZmNjBmMGZlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg" alt=""></figure>
+                <figure><img src="https://m.media-amazon.com/images/M/MV5BN2I5YzFlYWEtZjRhNy00ZmQzLWJhNTktZGIwYjFjODdmNDgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" alt=""></figure>
+            </div>
+        </div>
+        <section class="posters hide" id="posters"></section>
+        <section class="card hide" id="card"></section>
+    </main>
+    <footer>
+        <p>Hackathon Copyright © Sabrina, Leslye, Nora & Adriana 2019 </p>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="data.js"></script>
 </body>
 
 </html>
