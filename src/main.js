@@ -83,9 +83,10 @@ const showCard = (idMovie) => {
                         rating: json.imdbRating,
                     }
                     card.innerHTML = `
+                    <div class='cardstyles'>
                     <img class="cardImg" src="${movie.poster}" alt="${movie.title}" >
                     <aside class="characteristics">
-                    <h2>${movie.title}</h2>
+                    <h2 class='cardTitle'>${movie.title}</h2>
                     <aside class="moviecard">
                       <div>
                       <p>Resumen: ${movie.plot}</p>
@@ -105,7 +106,6 @@ const showCard = (idMovie) => {
                       <div>
                       <p>Género: ${movie.genre}</p>
                       </div>
-                      </div>
                       <div>
                       <p>Actores: ${movie.actors}</p>
                       </div>
@@ -118,7 +118,9 @@ const showCard = (idMovie) => {
                       <div class="star">
                       <p class="star">${movie.rating}</p>
                       </div>
-                    </aside>        
+                    </aside>
+                    </div>
+                    </div>
                     `;
                 })
         }
