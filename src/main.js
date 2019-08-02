@@ -113,31 +113,3 @@ const showCard = (idMovie) => {
 };
 
 display.addEventListener('click', getId);
-
-/* const searchMovies = async(searchBy,page) => {
-    const url = baseURL +'&s='+ searchBy +'&page='+ page;
-       const response = await fetch(url);
-       const json = await response.json();
-       return json.Search;
-       }
-
-const select = document.getElementById("select1");
-
-const selectOption = () => {
-    let word = select.value;
-    switch(word) {
-      case 'Acción':
-        searchTitles('kill',1).then(data => showCard(data))
-      break;
-      case 'Guerra':
-        searchTitles('war',1).then(data => showCard(data))
-      break;
-      case 'Humor':
-        searchTitles('comedy',1).then(data => showCard(data));
-      break;
-    }
-  }
-
-  select.addEventListener('change', selectOption);
-
-  window.searchMovies = searchMovies; */
